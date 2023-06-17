@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/Acceuil.css">
+    <link rel="stylesheet" href="./CSS/Recherche.css">
+
+</head>
+<body>
+     <!-- Header -->
+    <header class="container-fluild">
+        <nav class="navbar navbar-expand-lg py-3 ">
+            <a href="/Acceuil.html" class="navbar-brand text-white">MOVIE BLUE</a>
+            <div class="collapse navbar-collapse justify-content-end"> 
+                <ul class="navbar-nav"> 
+                    <li class="text-uppercase">
+                        <a class="navbar-item  text-decoration-none"  href="./Recherche.html">Recherche</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="navbar-item  text-decoration-none" href="./Favoris.html">Favourite</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="navbar-item  text-decoration-none" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section -->
+
+    <section class="container container-main" style="margin-bottom: 600px;">
+      <!-- Form -->
+      <div class="form_search">
+        <h3 class="">FILTRE</h3>
+        <div class="search_details" style=" display: flex;">
+
+          <div class="search_form" style="display: grid;">  
+            <label for="search_byword">Recherche par mots-clés</label>
+            <input type="text" id="search_byword" name="search_byword" placeholder="Ex: Fast X...">
+          </div>
+  
+          <div class="option_form" style="display: grid;">
+            <label for="vedette">Film Vedette</label>
+            <select name="vedette" id="vedette">
+              <option value="Top tendances">Top tendances</option>
+              <option value="À venir">À venir</option>
+              <option value="Le plus vus">Le plus vus</option>
+            </select>
+          </div>
+  
+          <div class="statut_form" style="display: grid;">  
+            <label for=""> Statute </label>  
+              <div class="option_statut">
+                <input type="checkbox" id="statut1" name="statut1" value="NOUVEAUX">
+                <label for="statut1"> NOUVEAUX</label> <br>
+                <input type="checkbox" id="statut2" name="statut2" value="À VENIR">
+                <label for="statut2">À VENIR</label> <br>
+                <input type="checkbox" id="statut3" name="statut3" value="LES PLUS VUS">
+                <label for="statut3"> LES PLUS VUS</label>
+              </div>
+          </div>
+        </div>
+
+        <input class="button_submit" type="submit" value="Soumettre">
+       
+
+      </div>
+
+      <!-- Movies -->
+      <div id="list_movie">
+        <hr class="line_recherche" color="#000"   width="1300px"/>
+        <div class="movie_nouveau">
+          <h3 class="title_nouveau">NOUVEAUX</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_nouveau1.png" class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_nouveau2.png" class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_nouveau3.png"class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie_comming">
+          <h3>À VENIR</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_avnir1.png" class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_avenir2.png"class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_avenir3.png"class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie_view">
+          <h3>LES PLUS VUS</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+              <div class="card_movie card h-100" >
+                <img src="./Image/MOVIES_nouveau1.png" class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_nouveau2.png" class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card_movie card h-100">
+                <img src="./Image/MOVIES_nouveau3.png"class="card-img-top" alt="...">
+                <p>Fast X</p>
+                <a href="./Detail-1film.html"><button class="btn button_todetail">Plus details</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+     <!-- Footer -->
+    <footer id="footer" class="containter">
+      <hr class="line_footer" color="#000"   width="1300px"/>
+        <div class="row">
+          <div class="col-6 contact-footer"><h3>CONTACT</h3>
+            <div class="detail_contact">
+              <p>Email: abc@gamil.com</p>
+            <p>Tel: 438 1234567</p>
+            <p>Adresse: 1234 Chambly, J3Y 1H6</p>
+            </div>
+          </div>
+          <div class="col-6 map_footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.7077503397513!2d-73.49634412323027!3d45.53608632863863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b5a3d8603bb%3A0x3bfdfd60c289859d!2sC%C3%A9gep%20%C3%89douard-Montpetit!5e0!3m2!1sfr!2sca!4v1686611413806!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <a href="https://www.facebook.com/cegepmontpetit/?locale=fr_CA"><img src="./Image/Facebook_icon_2013 1.png" alt=""></a>
+            <a href="https://www.instagram.com/cegepmontpetit/?hl=fr"><img src="./Image/Instagram_logo_2016 1.png" alt=""></a>
+            <a href="https://twitter.com/CegepMontpetit"><img src="./Image/téléchargement 1.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCRum64VisJR7CpnpAh3ihHw"><img src="./Image/YouTube_full-color_icon_(2017) 1.png" alt=""></a>
+          
+          </div>
+        </div>
+    </footer>
+
+</body>
+</html>
