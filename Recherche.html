@@ -22,7 +22,7 @@
 
 <body>
   <!-- Header -->
-  <header class="container-fluild">
+  <header class="container-fluild" >
     <nav class="navbar navbar-expand-lg py-3 ">
       <div class="header_left col-2">
         <a href="./Acceuil.html" class="navbar-brand ">MOVIE BLUE</a>
@@ -51,7 +51,7 @@
        class="menu_ipad col-1">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <div id="menu-burger" style="display: none">
+      <div id="menu-burger" style="display: none; user-select: none;">
         <a target="_self" href="./Favoris.html" class="burger-item">FAVOURTIE</a>
         <a target="_self" href="#footer" class="burger-item">CONTACT</a>
         <a target="_self" href="./Ajouter.html" class="burger-item">+ Ajouter un film</a>
@@ -481,22 +481,21 @@
     let menuBurger = document.getElementById('menu-burger')
     function openMenuBurger(){
       if(menuBurger.style.display === 'none') {
-          menuBurger.style.height = '0'
-          menuBurger.style.display = 'flex'
-          menuBurger.style.height = '1px'
-          menuBurger.classList.add('burger-open')
-          menuBurger.classList.remove('burger-closed')
-          return 
-        }
-        if(menuBurger.style.display === 'flex'){
-          menuBurger.classList.add('burger-closed')
-          menuBurger.classList.remove('burger-open')
-          setTimeout(() => {
-            menuBurger.style.display = 'none'
-          },300)
-          return
-        }
+        menuBurger.style.display = 'flex'
+        menuBurger.style.height = '104px'
+        menuBurger.classList.add('burger-open')
+        menuBurger.classList.remove('burger-closed')
+        return 
       }
+      if(menuBurger.style.display === 'flex'){
+        menuBurger.classList.add('burger-closed')
+        menuBurger.classList.remove('burger-open')
+        setTimeout(() => {
+          menuBurger.style.display = 'none'
+        },300)
+        return
+      }
+    }
   </script>
 </body>
 

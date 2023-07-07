@@ -164,7 +164,6 @@ color: white;
 }
 
 #menu-burger {
- 
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -201,11 +200,11 @@ color: white;
 }
 
 @keyframes slideDown {
-  from {height: 0};
-  to {height: 104px} 
+  from {height: 0; opacity: 0};
+  to {height: 104px; opacity: 0;} 
 }
 
 @keyframes slideUp {
-  from {height: 104px}
-  to {height: 0px}
+  from {height: 104px; opacity: 0.2;}
+  to {height: 0px; opacity: 0;}
 }
