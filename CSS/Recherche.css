@@ -174,13 +174,14 @@ color: white;
   text-align: center;
 }
 #menu-burger > .burger-item{
+  height: 100%;
   overflow: hidden;
   color: black;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #menu-burger >.burger-item:not(:last-child) {
@@ -201,10 +202,10 @@ color: white;
 
 @keyframes slideDown {
   from {height: 0; opacity: 0};
-  to {height: 104px; opacity: 0;} 
+  to {height: 100%; opacity: 1;} 
 }
 
 @keyframes slideUp {
-  from {height: 104px; opacity: 0.2;}
-  to {height: 0px; opacity: 0;}
+  from {height: 100%; opacity: 1;}
+  to {height: 0; opacity: 0;}
 }
